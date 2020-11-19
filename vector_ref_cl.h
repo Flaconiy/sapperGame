@@ -32,6 +32,8 @@ public:
   void clear(){
       v.clear();
       owned.clear();
+      v.resize(0);
+      owned.resize(0);
   }
 
   T& operator[] (int i)  { return *v.at(i); }
